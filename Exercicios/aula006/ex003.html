@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio JavaScript</title>
+    <style> 
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Ja me livrei da maldição</p>
+    <script>
+        /* var n1 = Number.parseInt() -> para inteiros
+           var n2 = Number.parseFloat() -> para decimais
+           var n3 = Number() -> o JS decide qual é o tipo
+        */
+        var n1 = Number.parseInt(window.prompt('Digite um numero: ')) // conversão para inteiro
+        var n2 = Number.parseInt(window.prompt('Digite outro numero: ')) // conversão para inteiro
+        var n3 = Number(window.prompt('Digite outro numero: ')) // Converte para o que o JS achar melhor
+        var sum = n1+n2+n3
+        window.alert('A soma entre '+n1+', '+n2+' e '+n3+ ' é igual a '+(sum.toString()))
+        window.alert(`A soma entre ${n1}, ${n2} e ${n3} é igual a ${String(sum)}`)
+    </script>
+</body>
+</html>

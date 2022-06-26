@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 004</title>
+    <style>
+        body {
+            background-color: rgb(103, 221, 221);
+        }
+        p {
+            font-size: 3em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+        document.write = escreve na linha
+        document.writeln = escreve na linha de baixo
+        n.toFixed(2) = mostra duas casas decimais
+        n.toLocalString('pt-BR', {style: 'currency', currency:'BRL'})
+        */
+        var nome = window.prompt('Digite seu nome: ')
+        var n = Number(window.prompt('Digite seu salario: '))
+        document.write(`<p>Seu nome é <strong>${nome}</strong> e tem ${nome.length} letras</p>`)
+        document.write(`<p>Seu nome em  letras maisculas é <strong>${nome.toUpperCase()}</strong></p>`)
+        document.write(`<p>Seu salario é de ${n.toLocaleString('pt-BR', {style:'currency', currency:'BRL'})}</p>`)
+    </script>
+</body>
+</html>
