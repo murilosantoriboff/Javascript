@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistema de Multas</h1>
+    Velocidade do Carro<input type="number" name="velocidade" id="txtvel"> Km/H
+    <input type="button" value="verificar" id="cal">
+    <div id="res">
+    </div>
+    <script>
+        var campo_but = window.document.getElementById('cal')
+        campo_but.addEventListener('click', calcular)
+        function calcular() {
+            var vel = window.document.getElementById('txtvel')
+            var vel_num = Number(vel.value)
+            var res_div = window.document.getElementById('res')
+            res_div.innerHTML = `<p>Sua velocidade é de <strong>${vel_num}<strong></p>`
+            if (vel_num > 60) {
+                res_div.innerHTML = `ACIMA DO LIMITE DE VELOCIDADE`
+            }
+            else {
+                res_div.innerHTML = `LIMITE DE VELOCIDADE PADRÃO`
+            }
+        }
+    </script>
+</body>
+</html>
