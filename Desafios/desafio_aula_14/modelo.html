@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Vamos Contar</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Vamos Contar</h1>
     </header>
     <main>
-        <section>
+        <section id="dados">
             <div>
-                Testando...
+                <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+                <p>Fim: <input type="number" name="fim" id="txtf"></p>
+                <p>Passo: <input type="number" name="passo" id="txtp"></p>
+                <input type="button" value="Contar" onclick="contador()" id="btn">
             </div>
-            <div>
-                Ola!
+            <div id="res">
+                Preparando a contagem
             </div>
         </section>
     </main>
