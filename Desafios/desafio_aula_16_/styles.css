@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(79, 79, 255);
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+section {
+    background-color: white;
+    margin: auto;
+    width: 600px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+#btn-add {
+    margin-left: 5px;
+}
+
+#btn-end {
+    margin-top: 5px;
+}
